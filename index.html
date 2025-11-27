@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio</title>
+    <title>My Personal Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
 
   <body>
     <header style="color: #000000">
       <h1><strong>&lt;/&gt; Hello World! &lt;/&gt;</strong></h1>
-      <h2>I'm <span class="highlight">Liyutsa Zirange</span></h2>
+      <h2 style="color: #ffffff">I'm <span class="highlight">Liyutsa Zirange</span></h2>
 
       <p style="color: #808080">
         Full Stack Developer with Python & Data Scientist with AI/ML
@@ -26,7 +27,7 @@
 
       <div class="button-container">
         <button id="Contact">Contact Me</button>
-        <button id="work">View My Work</button>
+        <button onclick = "window.location.href='#project'" id="work">View My Work</button>
       </div>
 
       <div class="row">
@@ -52,19 +53,23 @@
 
     <main style="color: #999696ff">
       <!-- Featured Projects -->
+
+      <div class="animate-on-scroll">
+
       <h1 style="color: #ffffff; font-size: 60px">
         Featured <span class="highlight">Projects</span>
       </h1>
       <p style="color: #808080">Some of my recent work and side Projects</p>
 
-      <!-- Project 1 -->
+      <div id="project">
       <div class="flex">
         <div class="column">
-          <h1 style="color: #ffffff">My Dev-Portfolio</h1>
+          <h1 style="color: #ffffff">My-Personal-Portfolio</h1>
           <p>
             A simple developer portfolio. This website showcases my Technical
-            skills and projects
-          </p>
+            skills and projects.
+          </p> <br>
+
           <div class="skillset">
             <button class="skill">HTML</button>
             <button class="skill">CSS</button>
@@ -78,15 +83,14 @@
           </div>
         </div>
       </div>
-
-      <!-- Project 2 -->
+  
       <div class="flex">
         <div class="column">
           <h1 style="color: #ffffff">Netlytics</h1>
           <p>
             A Netflix based UI with ML induced Dashboards. <br />
             It showcases Full Stack Development + Data Science
-          </p>
+          </p> <br>
 
           <div class="skillset">
             <button class="skill">HTML</button>
@@ -107,10 +111,10 @@
         </div>
       </div>
 
-      <!-- Project 3 -->
       <div class="flex">
         <div class="column">
           <h1 style="color: #ffffff">CampusIntern</h1>
+          <p>CampusIntern is a college-verified virtual internship where students learn by doing, complete projects, and gain real-world experience online.</p><br>
 
           <div class="skillset">
             <button class="skill">HTML</button>
@@ -126,33 +130,41 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
+    <div class = "animate-on-scroll">>
       <!-- Skills Section -->
       <h1 style="color: #ffffff; font-size: 60px">
         Skills & <span class="highlight">Technologies</span>
       </h1>
       <p style="color: #808080">Tools and Technologies I work with</p>
 
-      <h3>Frontend</h3>
-      <div class="skillset">
+      <div class="project-skillset">
+        <h3>Frontend</h3>
+        <div class="skillset">
         <button class="skill">HTML</button>
         <button class="skill">CSS</button>
         <button class="skill">Javascript</button>
       </div>
+    </div>
 
       <br />
 
-      <h3>Backend</h3>
-      <div class="skillset">
+        <div class="project-skillset">
+        <h3>Backend</h3>
+        <div class="skillset">
         <button class="skill">Flask</button>
         <button class="skill">MySQL</button>
         <button class="skill">MongoDB</button>
       </div>
+    </div>
 
       <br />
 
-      <h3>Data Science Tools & Others</h3>
-      <div class="skillset">
+      <div class="project-skillset">
+        <h3>Data Science Tools & Others</h3>
+        <div class="skillset">
         <button class="skill">Numpy</button>
         <button class="skill">Pandas</button>
         <button class="skill">Matplotlib</button>
@@ -162,7 +174,10 @@
         <button class="skill">Jupyter Notebook</button>
         <button class="skill">Google Colab</button>
       </div>
+    </div>
+    </div>
 
+    <div class = "animate-on-scroll">
       <!-- Connect Section -->
       <h1 style="color: #ffffff; font-size: 60px">
         Let's <span class="highlight">Connect</span>
@@ -172,28 +187,17 @@
       </p>
 
       <div class="connect">
-        <div class="column">
-          <a href="mailto:Liyutsa@gmail.com">
-            <img src="assets/email_logo.jpg" alt="Visit My Email" />
-          </a>
-          <p>Email<br />Liyutsa@gmail.com</p>
+          <p>Email : Liyutsa@gmail.com</p>
         </div>
-
-        <div class="column">
-          <a href="https://www.linkedin.com/in/liyutsa-zirange-bb1a76195">
-            <img src="assets/Linkedin.png" alt="Visit My Linkedin Page" />
-          </a>
-          <p>Linkedin</p>
-        </div>
-      </div>
 
       <div class="msg">
         <p>
           I'm always interested in hearing about new projects <br />
           and opportunities. Whether you have a question or <br />
           just want to say hi, feel free to reach out!
-        </p>
-        <button id="msg">➤ Send Message</button>
+        </p> <br>
+        <button onclick="window.location.href='mailto:Liyutsa@gmail.com'">➤ Send Message</button>
+      </div>
       </div>
     </main>
 
